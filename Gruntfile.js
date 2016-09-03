@@ -44,23 +44,29 @@ module.exports = function(grunt) {
                     // 'dev/Plugin.EveryWhere.js',
                     'dev/DetectRTC.js',
 
-                    'dev/ios-hacks.js', // to support ios
+                    // no need
+                    //'dev/ios-hacks.js', // to support ios
                     'dev/RTCPeerConnection.js',
                     'dev/CodecsHandler.js', // to force H264 or codecs other than opus
 
                     'dev/OnIceCandidateHandler.js',
+                    // XXX careful! creates iframe, uses external URLs.
                     'dev/IceServersHandler.js',
 
                     // 'dev/gumadapter.js',
                     'dev/getUserMedia.js',
                     'dev/StreamsHandler.js',
 
-                    'dev/Screen-Capturing.js',
+                    // no need
+                    //'dev/Screen-Capturing.js',
 
-                    'dev/TextSenderReceiver.js',
-                    'dev/FileProgressBarHandler.js',
+                    // file part of translation
+                    //'dev/TextSenderReceiver.js',
+                    // XXX includes HTML stuff...
+                    //'dev/FileProgressBarHandler.js',
 
-                    'dev/TranslationHandler.js',
+                    // no need
+                    //'dev/TranslationHandler.js',
                     'dev/tail.js'
                 ],
                 dest: './temp/RTCMultiConnection.js',
