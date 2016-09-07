@@ -90,7 +90,7 @@ module.exports = function(grunt) {
         clean: ['./temp'],
         uglify: {
             options: {
-                mangle: false,
+                mangle: true,
                 banner: banner
             },
             my_target: {
